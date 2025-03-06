@@ -11,6 +11,7 @@ def Read_user_csv_Data(User_path):
     item2idx = {}  # item_id → int 映射表
     current_user = None
     next_idx = 1  
+    iteractions = 0
 
     with open(User_path, 'r') as f:
             
@@ -35,6 +36,7 @@ def Read_user_csv_Data(User_path):
                 if len(user_interactions) > 5:
                     users_interactions.append(user_interactions)
                     users_timestamps.append(user_timestamps)
+                    iteractions += len(user_interactions)
                 
                 user_interactions = []
                 user_timestamps = []
@@ -48,6 +50,9 @@ def Read_user_csv_Data(User_path):
             if purchase == 'True':
                 user_interactions.append(user_interaction)
                 user_timestamps.append(user_timestamp)
+
+        print(f"Total interactions: {iteractions}")
+        print(f"Total users: {len(users_interactions)}")
         
     return users_interactions , users_timestamps , item2idx
 
