@@ -1,8 +1,8 @@
 from json import *
 from GenerateInteractions import  *
 import os
-from datasets import load_dataset
 
+User_path_json = 'All_Beauty.jsonl'
 
 Item_path_json = 'meta_All_Beauty.jsonl'
 
@@ -54,32 +54,32 @@ def Read_user_csv_Data(User_path):
         
     return users_interactions
 
-def Read_user_json_Data():
+def Read_user_json_Data(User_path):
     users_interactions = []
     usr_interactions = []
     user_id = 0
-    data = load_dataset("McAuley-Lab/Amazon-Reviews-2023", "raw_review_All_Beauty", trust_remote_code=True)
-        
-    for interaction in data:
-        user_interaction = read_interaction(interaction)
+    with open(User_path, 'r') as f:
+        interactions = f.readlines()
+        for interaction in interactions:
+            user_interaction = read_interaction(interaction)
 
-        if user_interaction['user_id'] == user_id:
-            usr_interactions.append(user_interaction)
-        
-        else:
-            user_id = user_interaction['user_id']
-            if len(usr_interactions) > 3:
-                usr_interactions.sort(key=lambda x: x['timestamp'])
-                users_interactions.append(usr_interactions)
+            if user_interaction['user_id'] == user_id:
+                usr_interactions.append(user_interaction)
+            
+            else:
+                user_id = user_interaction['user_id']
+                if len(usr_interactions) > 3:
+                    usr_interactions.sort(key=lambda x: x['timestamp'])
+                    users_interactions.append(usr_interactions)
 
-            usr_interactions = []
-            usr_interactions.append(user_interaction)
+                usr_interactions = []
+                usr_interactions.append(user_interaction)
 
     return users_interactions
 
 def Read_User_Data():
     if not os.path.exists(Raw_User_Data_path):
-        users_interactions = Read_user_json_Data()
+        users_interactions = Read_user_json_Data(User_path_json)
     else:
         users_interactions = Read_user_csv_Data(Raw_User_Data_path)
     return users_interactions
@@ -262,9 +262,9 @@ def main():
     if not os.path.exists(Raw_Item_Data_path):
         Save_Item_CSV(items, Raw_Item_Data_path)
 
-#    users_interactions = Data_Insertion(Raw_user_interactions, items)
+    users_interactions = Data_Insertion(Raw_user_interactions, items)
 
-#    Save_User_CSV(users_interactions , User_Data_path)
+    Save_User_CSV(users_interactions , User_Data_path)
 
 if __name__ == '__main__':
     main()
