@@ -17,6 +17,10 @@ def Read_user_csv_Data(User_path):
         for line in f:
 
             user_id, item_id, rating, timestamp, purchase = line.strip().split(',')
+
+            if "_pesudo" in item_id:
+                
+                item_id = item_id.replace("_pesudo","")
             
             # 如果 item_id 不在映射表中，分配新索引
             if item_id not in item2idx:
@@ -28,8 +32,9 @@ def Read_user_csv_Data(User_path):
             
             if user_id != current_user and current_user != None: 
 
-                users_interactions.append(user_interactions)
-                users_timestamps.append(user_timestamps)
+                if len(user_interactions) > 5:
+                    users_interactions.append(user_interactions)
+                    users_timestamps.append(user_timestamps)
                 
                 user_interactions = []
                 user_timestamps = []
@@ -40,8 +45,9 @@ def Read_user_csv_Data(User_path):
 
                 current_user = user_id
 
-            user_interactions.append(user_interaction)
-            user_timestamps.append(user_timestamp)
+            if purchase == 'True':
+                user_interactions.append(user_interaction)
+                user_timestamps.append(user_timestamp)
         
     return users_interactions , users_timestamps , item2idx
 
@@ -57,6 +63,15 @@ def negative_sampling(pos_samples, num_items, num_neg=1):
             neg = random.randint(0, num_items - 1)
         neg_samples.append(neg)
     return neg_samples
+
+
+def split_train_test(users_interactions, users_timestamps, train_size=0.2):
+
+    split_idx = int(train_size * len(users_interactions))
+    train_interactions, test_interactions = users_interactions[:split_idx], users_interactions[split_idx:]
+    train_timestamps, test_timestamps = users_timestamps[:split_idx], users_timestamps[split_idx:]
+
+    return train_interactions, train_timestamps, test_interactions, test_timestamps
 
 
 class RecSysDataset(Dataset):

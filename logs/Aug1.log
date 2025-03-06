@@ -1,0 +1,122 @@
+Epoch [1/100], Loss: 4.0289
+Epoch [2/100], Loss: 3.6647
+Epoch [3/100], Loss: 3.5026
+Epoch [4/100], Loss: 3.4074
+Epoch [5/100], Loss: 3.1966
+Evaluation at Epoch 5: {'NDCG@5': 0.0013, 'NDCG@10': 0.0042, 'Hit@5': 0.0021, 'Hit@10': 0.0104, 'MRR': 0.0066}
+Epoch [6/100], Loss: 2.9995
+Epoch [7/100], Loss: 2.9373
+Epoch [8/100], Loss: 2.6542
+Epoch [9/100], Loss: 2.5677
+Epoch [10/100], Loss: 2.4065
+Evaluation at Epoch 10: {'NDCG@5': 0.005, 'NDCG@10': 0.0063, 'Hit@5': 0.0083, 'Hit@10': 0.0124, 'MRR': 0.0079}
+Epoch [11/100], Loss: 2.3059
+Epoch [12/100], Loss: 2.1415
+Epoch [13/100], Loss: 2.0460
+Epoch [14/100], Loss: 1.9460
+Epoch [15/100], Loss: 1.8197
+Evaluation at Epoch 15: {'NDCG@5': 0.0042, 'NDCG@10': 0.0056, 'Hit@5': 0.0062, 'Hit@10': 0.0104, 'MRR': 0.0076}
+Epoch [16/100], Loss: 1.6820
+Epoch [17/100], Loss: 1.6195
+Epoch [18/100], Loss: 1.4926
+Epoch [19/100], Loss: 1.4113
+Epoch [20/100], Loss: 1.3797
+Evaluation at Epoch 20: {'NDCG@5': 0.0021, 'NDCG@10': 0.0048, 'Hit@5': 0.0021, 'Hit@10': 0.0104, 'MRR': 0.007}
+Epoch [21/100], Loss: 1.3252
+Epoch [22/100], Loss: 1.2585
+Epoch [23/100], Loss: 1.1939
+Epoch [24/100], Loss: 1.1767
+Epoch [25/100], Loss: 1.1226
+Evaluation at Epoch 25: {'NDCG@5': 0.0047, 'NDCG@10': 0.0067, 'Hit@5': 0.0083, 'Hit@10': 0.0145, 'MRR': 0.0102}
+Epoch [26/100], Loss: 1.0745
+Epoch [27/100], Loss: 1.0358
+Epoch [28/100], Loss: 1.0217
+Epoch [29/100], Loss: 1.0147
+Epoch [30/100], Loss: 0.9861
+Evaluation at Epoch 30: {'NDCG@5': 0.0236, 'NDCG@10': 0.0262, 'Hit@5': 0.0394, 'Hit@10': 0.0477, 'MRR': 0.028}
+Epoch [31/100], Loss: 0.9593
+Epoch [32/100], Loss: 0.9612
+Epoch [33/100], Loss: 0.9657
+Epoch [34/100], Loss: 0.9437
+Epoch [35/100], Loss: 0.9253
+Evaluation at Epoch 35: {'NDCG@5': 0.0922, 'NDCG@10': 0.1159, 'Hit@5': 0.1369, 'Hit@10': 0.2116, 'MRR': 0.1027}
+Epoch [36/100], Loss: 0.9200
+Epoch [37/100], Loss: 0.8926
+Epoch [38/100], Loss: 0.8889
+Epoch [39/100], Loss: 0.8776
+Epoch [40/100], Loss: 0.8729
+Evaluation at Epoch 40: {'NDCG@5': 0.2631, 'NDCG@10': 0.3011, 'Hit@5': 0.3714, 'Hit@10': 0.4876, 'MRR': 0.2561}
+Epoch [41/100], Loss: 0.8712
+Epoch [42/100], Loss: 0.8799
+Epoch [43/100], Loss: 0.8711
+Epoch [44/100], Loss: 0.8696
+Epoch [45/100], Loss: 0.8608
+Evaluation at Epoch 45: {'NDCG@5': 0.5653, 'NDCG@10': 0.5971, 'Hit@5': 0.6909, 'Hit@10': 0.7884, 'MRR': 0.5451}
+Epoch [46/100], Loss: 0.8619
+Epoch [47/100], Loss: 0.8664
+Epoch [48/100], Loss: 0.8606
+Epoch [49/100], Loss: 0.8559
+Epoch [50/100], Loss: 0.8510
+Evaluation at Epoch 50: {'NDCG@5': 0.7972, 'NDCG@10': 0.8104, 'Hit@5': 0.8983, 'Hit@10': 0.9419, 'MRR': 0.7715}
+Epoch [51/100], Loss: 0.8494
+Epoch [52/100], Loss: 0.8541
+Epoch [53/100], Loss: 0.8484
+Epoch [54/100], Loss: 0.8529
+Epoch [55/100], Loss: 0.8424
+Evaluation at Epoch 55: {'NDCG@5': 0.8955, 'NDCG@10': 0.9005, 'Hit@5': 0.9564, 'Hit@10': 0.973, 'MRR': 0.8787}
+Epoch [56/100], Loss: 0.8516
+Epoch [57/100], Loss: 0.8519
+Epoch [58/100], Loss: 0.8433
+Epoch [59/100], Loss: 0.8449
+Epoch [60/100], Loss: 0.8491
+Evaluation at Epoch 60: {'NDCG@5': 0.9442, 'NDCG@10': 0.9477, 'Hit@5': 0.9793, 'Hit@10': 0.9896, 'MRR': 0.9348}
+Epoch [61/100], Loss: 0.8460
+Epoch [62/100], Loss: 0.8446
+Epoch [63/100], Loss: 0.8410
+Epoch [64/100], Loss: 0.8395
+Epoch [65/100], Loss: 0.8386
+Evaluation at Epoch 65: {'NDCG@5': 0.9296, 'NDCG@10': 0.9336, 'Hit@5': 0.973, 'Hit@10': 0.9855, 'MRR': 0.9171}
+Epoch [66/100], Loss: 0.8379
+Epoch [67/100], Loss: 0.8340
+Epoch [68/100], Loss: 0.8379
+Epoch [69/100], Loss: 0.8277
+Epoch [70/100], Loss: 0.8347
+Evaluation at Epoch 70: {'NDCG@5': 0.9332, 'NDCG@10': 0.9368, 'Hit@5': 0.973, 'Hit@10': 0.9834, 'MRR': 0.9221}
+Epoch [71/100], Loss: 0.8314
+Epoch [72/100], Loss: 0.8266
+Epoch [73/100], Loss: 0.8313
+Epoch [74/100], Loss: 0.8336
+Epoch [75/100], Loss: 0.8230
+Evaluation at Epoch 75: {'NDCG@5': 0.9337, 'NDCG@10': 0.9353, 'Hit@5': 0.9751, 'Hit@10': 0.9813, 'MRR': 0.9217}
+Epoch [76/100], Loss: 0.8293
+Epoch [77/100], Loss: 0.8269
+Epoch [78/100], Loss: 0.8210
+Epoch [79/100], Loss: 0.8266
+Epoch [80/100], Loss: 0.8201
+Evaluation at Epoch 80: {'NDCG@5': 0.9218, 'NDCG@10': 0.9252, 'Hit@5': 0.971, 'Hit@10': 0.9813, 'MRR': 0.907}
+Epoch [81/100], Loss: 0.8195
+Epoch [82/100], Loss: 0.8181
+Epoch [83/100], Loss: 0.8218
+Epoch [84/100], Loss: 0.8252
+Epoch [85/100], Loss: 0.8177
+Evaluation at Epoch 85: {'NDCG@5': 0.9116, 'NDCG@10': 0.9147, 'Hit@5': 0.9668, 'Hit@10': 0.9772, 'MRR': 0.8954}
+Epoch [86/100], Loss: 0.8199
+Epoch [87/100], Loss: 0.8164
+Epoch [88/100], Loss: 0.8166
+Epoch [89/100], Loss: 0.8124
+Epoch [90/100], Loss: 0.8117
+Evaluation at Epoch 90: {'NDCG@5': 0.915, 'NDCG@10': 0.918, 'Hit@5': 0.9647, 'Hit@10': 0.9751, 'MRR': 0.9007}
+Epoch [91/100], Loss: 0.8076
+Epoch [92/100], Loss: 0.8081
+Epoch [93/100], Loss: 0.8123
+Epoch [94/100], Loss: 0.8100
+Epoch [95/100], Loss: 0.8153
+Evaluation at Epoch 95: {'NDCG@5': 0.7726, 'NDCG@10': 0.7854, 'Hit@5': 0.8776, 'Hit@10': 0.917, 'MRR': 0.7458}
+Epoch [96/100], Loss: 0.8141
+Epoch [97/100], Loss: 0.8055
+Epoch [98/100], Loss: 0.8080
+Epoch [99/100], Loss: 0.8033
+Epoch [100/100], Loss: 0.8071
+Evaluation at Epoch 100: {'NDCG@5': 0.7999, 'NDCG@10': 0.8141, 'Hit@5': 0.8859, 'Hit@10': 0.9295, 'MRR': 0.7796}
+Best model with NDCG@10 = 0.9477 loaded.
+Final Evaluation: {'NDCG@5': 0.7999, 'NDCG@10': 0.8141, 'Hit@5': 0.8859, 'Hit@10': 0.9295, 'MRR': 0.7796}

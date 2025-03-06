@@ -376,7 +376,12 @@ class TAT4SRec(nn.Module):
         self.prediction = PredictionLayer(d_model , num_items)
 
     def forward(self , item_ids , timestamps):
-        
+        """
+        item_ids: Item ID tensor (batch_size, seq_len)
+        timestamps: Timestamp tensor (batch_size, seq_len)
+
+        returns: preference scores (batch_size, seq_len, num_items)
+        """
         # Embedding layer
         item_embeddings = self.itemembedding(item_ids)
         timestamp_embeddings = self.timestampembedding(timestamps)
